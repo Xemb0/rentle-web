@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rentle — Property &amp; Rent Management for Owners and Tenants</title>
+    <meta name="description" content="Rentle helps property owners manage rooms, tenants and rent collection over UPI — and lets tenants pay bills, upload documents and chat, all in one app." />
+    <link rel="icon" type="image/png" href="images/rentle-logo.png" />
+    <meta property="og:title" content="Rentle — Rent management, sorted." />
+    <meta property="og:description" content="Manage properties, rooms, tenants and rent over UPI. For owners and tenants." />
+    <meta property="og:image" content="https://rentle.imautotech.in/images/rentle-logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+      .float-animation { animation: float 6s ease-in-out infinite; }
+      .gradient-text {
+        background: linear-gradient(45deg, #60a5fa, #3b82f6, #6366f1);
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      }
+      .glow-effect { box-shadow: 0 0 24px rgba(59, 130, 246, 0.30); }
+    </style>
+  </head>
+  <body class="bg-gray-950 text-white overflow-x-hidden">
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 py-16 lg:px-20 bg-gradient-to-br from-blue-950 via-slate-900 to-indigo-950 relative">
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-blue-500/20 rounded-full blur-xl float-animation"></div>
+        <div class="absolute bottom-20 right-10 w-40 h-40 bg-indigo-500/20 rounded-full blur-xl float-animation" style="animation-delay:-2s;"></div>
+        <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-sky-500/20 rounded-full blur-xl float-animation" style="animation-delay:-4s;"></div>
+      </div>
+
+      <div class="lg:w-1/2 text-center lg:text-left relative z-10">
+        <div class="mb-8 flex justify-center lg:justify-start">
+          <img src="images/rentle-logo.png" alt="Rentle logo" class="w-20 h-20 rounded-2xl glow-effect object-cover" />
+        </div>
+
+        <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+          <span class="text-white">Rent management,</span><br />
+          <span class="gradient-text">sorted.</span>
+        </h1>
+
+        <p class="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed">
+          Rentle gives property owners one place to manage rooms, tenants and rent collection over UPI — and gives tenants a simple way to pay bills, upload documents and stay in touch.
+        </p>
+
+        <div class="bg-white/[0.04] backdrop-blur-xl rounded-2xl p-6 mb-8 border border-white/10 shadow-2xl">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase">Available on</h3>
+            <span class="text-[11px] font-semibold text-green-400/90 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span> Live
+            </span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <a href="https://play.google.com/store/apps/details?id=com.rentle.app" class="flex items-center justify-center gap-2 rounded-xl py-4 bg-white/[0.03] border border-white/10 hover:border-[#3DDC84]/50 hover:bg-white/[0.06] transition-colors">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#3DDC84"><path d="M17.523 15.341a1.001 1.001 0 1 1 0-2.002 1.001 1.001 0 0 1 0 2.002m-11.046 0a1.001 1.001 0 1 1 0-2.002 1.001 1.001 0 0 1 0 2.002m11.405-6.02 1.997-3.46a.416.416 0 0 0-.152-.567.416.416 0 0 0-.568.152l-2.022 3.503a12.331 12.331 0 0 0-5.137-1.103c-1.84 0-3.583.398-5.138 1.103L4.842 4.946a.416.416 0 0 0-.568-.152.416.416 0 0 0-.152.567l1.997 3.46C2.687 11.07.605 14.32.605 18.073h22.79c0-3.752-2.082-7.003-5.513-8.752"/></svg>
+              <div class="text-left leading-tight"><div class="text-[13px] font-semibold text-white">Android</div><div class="text-[10px] text-green-400/80 font-medium">Live on Google Play</div></div>
+            </a>
+            <a href="#ios-beta" class="flex items-center justify-center gap-2 rounded-xl py-4 bg-white/[0.03] border border-blue-400/30 hover:border-blue-400/60 hover:bg-white/[0.06] transition-colors relative overflow-hidden">
+              <span class="absolute top-1.5 right-1.5 text-[8px] font-bold tracking-wider text-blue-300 bg-blue-500/20 px-1.5 py-0.5 rounded">BETA</span>
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+              <div class="text-left leading-tight"><div class="text-[13px] font-semibold text-white">iOS</div><div class="text-[10px] text-blue-300 font-medium">Join the beta</div></div>
+            </a>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-1.5 text-xs text-gray-300 bg-white/[0.05] border border-white/10 rounded-full px-3 py-1.5">💸 Rent &amp; bills over UPI</span>
+            <span class="inline-flex items-center gap-1.5 text-xs text-gray-300 bg-white/[0.05] border border-white/10 rounded-full px-3 py-1.5">🧾 Auto invoices &amp; receipts</span>
+            <span class="inline-flex items-center gap-1.5 text-xs text-gray-300 bg-white/[0.05] border border-white/10 rounded-full px-3 py-1.5">💬 Owner ↔ tenant chat</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+          <a href="https://play.google.com/store/apps/details?id=com.rentle.app" class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 px-8 py-4 rounded-full font-bold text-white transform hover:scale-105 transition-all duration-300 glow-effect">📱 Get it on Google Play</a>
+          <a href="#features" class="bg-gray-800 hover:bg-gray-700 px-8 py-4 rounded-full font-bold text-white border border-gray-600 transform hover:scale-105 transition-all duration-300">See features</a>
+        </div>
+
+        <p class="text-gray-500 text-xs mt-6">
+          By installing or signing in to Rentle you agree to our
+          <a href="terms-of-service.html" class="text-blue-400 hover:text-blue-300 underline underline-offset-2">Terms of Service</a> and
+          <a href="privacy-policy.html" class="text-blue-400 hover:text-blue-300 underline underline-offset-2">Privacy Policy</a>.
+        </p>
+      </div>
+
+      <!-- Phone preview (real dashboard screenshot) -->
+      <div class="lg:w-1/2 mt-16 lg:mt-0 flex justify-center relative z-10">
+        <div class="relative">
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-indigo-500/30 blur-3xl rounded-full"></div>
+          <div class="relative w-[260px] rounded-[2.5rem] border-[10px] border-gray-800 bg-gray-800 shadow-2xl overflow-hidden">
+            <img src="images/screenshots/01-dashboard.jpg" alt="Rentle owner dashboard" class="w-full h-auto block" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="max-w-7xl mx-auto px-6 py-20">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6"><span class="gradient-text">One app,</span> both sides of the rental</h2>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">Owners run their properties end-to-end; tenants get a clean way to pay and stay in the loop.</p>
+      </div>
+
+      <!-- For owners -->
+      <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">🏠 For owners</h3>
+      <div class="grid md:grid-cols-3 gap-6 mb-14">
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-blue-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Properties &amp; rooms</h4>
+          <p class="text-gray-400 text-sm">Add properties, manage rooms and utilities, and see occupancy at a glance.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-blue-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Tenants &amp; KYC</h4>
+          <p class="text-gray-400 text-sm">Onboard tenants, collect KYC documents, and invite them with a QR code or join code.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-blue-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Rent collection over UPI</h4>
+          <p class="text-gray-400 text-sm">Set up your bank/UPI once and collect rent and bills directly from tenants.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-blue-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Invoices, receipts &amp; reports</h4>
+          <p class="text-gray-400 text-sm">Record payments, auto-generate receipts, and track finances with clear reports.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-blue-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Chat &amp; notifications</h4>
+          <p class="text-gray-400 text-sm">Message tenants in real time and send bulk reminders to a whole property.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-blue-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Maintenance &amp; leave requests</h4>
+          <p class="text-gray-400 text-sm">Handle maintenance and approve tenant leave requests right from your dashboard.</p>
+        </div>
+      </div>
+
+      <!-- For tenants -->
+      <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">🙋 For tenants</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-indigo-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">View &amp; pay bills</h4>
+          <p class="text-gray-400 text-sm">See your rent and utility bills and pay instantly over UPI — no chasing.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-indigo-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Upload documents</h4>
+          <p class="text-gray-400 text-sm">Submit KYC and other documents securely from your phone.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-indigo-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Join with a code</h4>
+          <p class="text-gray-400 text-sm">Scan your owner's QR or enter an invite code to join your room in seconds.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-indigo-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Payment history &amp; receipts</h4>
+          <p class="text-gray-400 text-sm">Keep every payment and receipt in one place for your records.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-indigo-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Chat with your owner</h4>
+          <p class="text-gray-400 text-sm">Ask questions and get updates over real-time chat.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700/50 hover:border-indigo-500/50 transition-all">
+          <h4 class="text-lg font-bold mb-2 text-white">Leave requests</h4>
+          <p class="text-gray-400 text-sm">Submit a leave/vacate request and track its status.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <div class="bg-gradient-to-r from-blue-900/50 to-indigo-900/50 rounded-3xl p-12 border border-blue-500/20">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-10 text-center">🚀 Get set up in minutes</h2>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="bg-gray-900/50 rounded-xl p-6"><div class="text-blue-300 text-3xl font-black mb-2">1</div><h4 class="font-semibold text-white mb-1">Add your property</h4><p class="text-sm text-gray-400">Create a property and add its rooms.</p></div>
+          <div class="bg-gray-900/50 rounded-xl p-6"><div class="text-blue-300 text-3xl font-black mb-2">2</div><h4 class="font-semibold text-white mb-1">Invite tenants</h4><p class="text-sm text-gray-400">Share a QR or join code; tenants hop in.</p></div>
+          <div class="bg-gray-900/50 rounded-xl p-6"><div class="text-blue-300 text-3xl font-black mb-2">3</div><h4 class="font-semibold text-white mb-1">Connect UPI</h4><p class="text-sm text-gray-400">Add your bank/UPI to receive rent.</p></div>
+          <div class="bg-gray-900/50 rounded-xl p-6"><div class="text-blue-300 text-3xl font-black mb-2">4</div><h4 class="font-semibold text-white mb-1">Collect &amp; track</h4><p class="text-sm text-gray-400">Bills go out, payments come in, receipts auto-generate.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- iOS Beta -->
+    <section id="ios-beta" class="py-16 px-6">
+      <div class="max-w-2xl mx-auto text-center">
+        <div class="bg-gradient-to-br from-blue-600/20 to-indigo-600/20 border border-blue-500/30 rounded-3xl p-8 backdrop-blur-sm">
+          <div class="text-4xl mb-3">🍎</div>
+          <h2 class="text-3xl font-bold mb-2"><span class="gradient-text">iOS Beta</span> — get early access</h2>
+          <p class="text-gray-300 mb-6">Want Rentle on your iPhone before it's on the App Store? Drop your Apple ID and we'll send you a TestFlight invite.</p>
+          <form id="beta-form" class="flex flex-col sm:flex-row gap-3 justify-center">
+            <input id="beta-apple-id" type="email" required placeholder="Your Apple ID (email)"
+                   class="flex-1 bg-gray-900/70 border border-gray-700 rounded-full px-5 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500" />
+            <button type="submit" id="beta-submit" class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 px-8 py-3 rounded-full font-bold text-white transform hover:scale-105 transition-all">Request invite</button>
+          </form>
+          <p id="beta-msg" class="text-sm mt-4 min-h-[1.25rem]"></p>
+          <p class="text-xs text-gray-500 mt-2">We only use your Apple ID to send the TestFlight invite. No spam, ever.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8 gradient-text">Take a look</h2>
+        <div id="gallery-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4"></div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="max-w-3xl mx-auto px-6 py-12 text-center">
+      <h2 class="text-3xl font-bold mb-4"><span class="gradient-text">Download</span> Rentle</h2>
+      <div class="flex flex-wrap gap-4 justify-center mt-6">
+        <a href="https://play.google.com/store/apps/details?id=com.rentle.app" class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 px-8 py-4 rounded-full font-bold">Get it on Google Play</a>
+        <a href="#ios-beta" class="bg-gray-800 hover:bg-gray-700 px-8 py-4 rounded-full font-bold border border-gray-600">iOS — join the beta</a>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Screenshots: render the local appstore images + a lightbox -->
+    <script>
+    (function () {
+      var shots = [
+        ['01-dashboard.jpg','Owner dashboard'], ['02-tenants.jpg','Tenants'],
+        ['03-record-payment.jpg','Record payment'], ['04-receipts.jpg','Receipts'],
+        ['05-property-rooms.jpg','Property & rooms'], ['06-reports.jpg','Reports'],
+        ['07-maintenance.jpg','Maintenance'], ['08-chat.jpg','Chat'],
+        ['09-tenant-home.jpg','Tenant home'], ['10-premium.jpg','Premium']
+      ].map(function (s) { return { url: 'images/screenshots/' + s[0], alt: 'Rentle — ' + s[1] }; });
+      var grid = document.getElementById('gallery-grid'); if (!grid) return;
+      grid.innerHTML = shots.map(function (s, i) {
+        return '<div class="cursor-pointer group overflow-hidden rounded-2xl shadow-lg border border-white/10 hover:-translate-y-1 transition-all" onclick="rtlOpen(' + i + ')">'
+          + '<img src="' + s.url + '" alt="' + s.alt + '" class="w-full h-auto block group-hover:scale-105 transition-transform" loading="lazy"></div>';
+      }).join('');
+      var lb = document.createElement('div');
+      lb.style.cssText = 'position:fixed;inset:0;z-index:99998;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.95);padding:24px;';
+      lb.innerHTML = '<button id="rtl-x" style="position:absolute;top:16px;right:20px;color:#fff;font-size:40px;background:none;border:0;cursor:pointer;">&times;</button>'
+        + '<button id="rtl-p" style="position:absolute;left:16px;color:#fff;font-size:48px;background:none;border:0;cursor:pointer;">&lsaquo;</button>'
+        + '<img id="rtl-img" style="max-height:88vh;max-width:90vw;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.6);">'
+        + '<button id="rtl-n" style="position:absolute;right:16px;color:#fff;font-size:48px;background:none;border:0;cursor:pointer;">&rsaquo;</button>';
+      document.body.appendChild(lb);
+      var cur = 0;
+      function show(i){ cur=(i+shots.length)%shots.length; document.getElementById('rtl-img').src=shots[cur].url; }
+      window.rtlOpen=function(i){ show(i); lb.style.display='flex'; };
+      function close(){ lb.style.display='none'; }
+      lb.addEventListener('click', function(e){ if(e.target===lb) close(); });
+      document.getElementById('rtl-x').onclick=close;
+      document.getElementById('rtl-p').onclick=function(){ show(cur-1); };
+      document.getElementById('rtl-n').onclick=function(){ show(cur+1); };
+      document.addEventListener('keydown', function(e){ if(lb.style.display!=='flex')return; if(e.key==='Escape')close(); if(e.key==='ArrowLeft')show(cur-1); if(e.key==='ArrowRight')show(cur+1); });
+    })();
+    </script>
+
+    <!-- iOS TestFlight signup → Rentle's Supabase (insert-only RLS). Publishable key is public by design. -->
+    <script>
+    (function () {
+      var betaClient = window.supabase.createClient('https://cvhxmrwrilcxbumzkpen.supabase.co', 'sb_publishable_6gs33tk1ZOZ3zBvt0oFs2Q_kS9ZbNd-');
+      var form = document.getElementById('beta-form'); if (!form) return;
+      var msg = document.getElementById('beta-msg'); var btn = document.getElementById('beta-submit');
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var appleId = document.getElementById('beta-apple-id').value.trim(); if (!appleId) return;
+        btn.disabled = true; btn.textContent = 'Sending…'; msg.textContent=''; msg.className='text-sm mt-4 min-h-[1.25rem]';
+        var res = await betaClient.from('testflight_signups').insert({ apple_id: appleId, platform: 'ios', source: 'website' });
+        if (!res.error) { msg.textContent="✅ You're on the list! Watch your inbox for a TestFlight invite."; msg.className='text-sm mt-4 min-h-[1.25rem] text-green-400'; form.reset(); }
+        else if (res.error.code === '23505') { msg.textContent="✅ You're already registered — your invite is on the way."; msg.className='text-sm mt-4 min-h-[1.25rem] text-green-400'; form.reset(); }
+        else { msg.textContent='⚠️ Something went wrong. Please try again.'; msg.className='text-sm mt-4 min-h-[1.25rem] text-red-400'; }
+        btn.disabled = false; btn.textContent = 'Request invite';
+      });
+    })();
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 backdrop-blur-sm border-t border-gray-800 py-12">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <div class="flex justify-center items-center space-x-3 mb-6">
+          <img src="images/rentle-logo.png" alt="Rentle logo" class="w-12 h-12 rounded-xl object-cover" />
+          <span class="text-2xl font-bold gradient-text">Rentle</span>
+        </div>
+        <p class="text-gray-400 mb-6">© 2026 Rentle by Imautotech — property &amp; rent management made simple.</p>
+        <div class="flex flex-wrap justify-center gap-6 text-sm">
+          <a href="privacy-policy.html" class="text-blue-400 hover:text-blue-300">Privacy Policy</a>
+          <a href="terms-of-service.html" class="text-blue-400 hover:text-blue-300">Terms of Service</a>
+          <a href="contact.html" class="text-blue-400 hover:text-blue-300">Contact Us</a>
+          <a href="https://imautotech.in/support/?product=rentle" class="text-blue-400 hover:text-blue-300">Help Center</a>
+          <a href="https://imautotech.in/support/delete.html?product=rentle" class="text-blue-400 hover:text-blue-300">Delete Account</a>
+          <a href="https://imautotech.in/" class="text-indigo-400 hover:text-indigo-300">Need an App Built?</a>
+        </div>
+        <p class="text-gray-500 text-sm mt-8 pt-6 border-t border-gray-800">Made with ❤️ for owners and tenants</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+          a.addEventListener('click', function (e) { var t=document.querySelector(this.getAttribute('href')); if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); } });
+        });
+      });
+    </script>
+  </body>
+</html>

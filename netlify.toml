@@ -1,0 +1,15 @@
+# Netlify config for the standalone Rentle marketing site.
+# Static site — no build step, just publish the repo root.
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache"
