@@ -7,7 +7,9 @@
 [[headers]]
   for = "/images/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    # Revalidate images each load (etag → cheap 304 if unchanged) so logo/asset
+    # swaps show up on a normal refresh. Bump back to a long max-age once stable.
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/*.html"
